@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis tablas</title>
+</head>
+<body>
+    <h1>Mis tablas</h1>
+    <hr>
+    <!-- tabla de usuarios -->
+    <!-- border="1" cellpadding="10" cellspacing="20" -->
+    <table border="1" cellpadding="10" cellspacing="0">
+        <!-- primera fila de cabeceras -->
+        <tr>
+            <th >
+                ID
+            </th>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Edad
+            </th>
+        </tr>
+        <!-- segunda fila  -->
+        <tr>
+            <!-- rowspan para combinar filas -->
+            <td rowspan="2">75706063</td>
+            <td>Eder Bruno</td>
+            <td>27</td>
+        </tr>
+        <!-- tercera fila -->
+        <tr>
+            <td>Omar Pizarro</td>
+            <td>27</td>
+        </tr>
+        <!-- cuarta fila  
+            tr>td*3 hace lo sgte-->
+            <!-- colspan es para combinar columnas de una fila -->
+        <tr>
+            <td>123456799</td>
+            <td colspan="2">Omar Bruno</td>
+        </tr>
+    </table>
+</body>
+</html>

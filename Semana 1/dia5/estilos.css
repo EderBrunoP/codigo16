@@ -1,0 +1,17 @@
+/* dentro de las llaves se defina el estilo a las etiquetas */
+h1{
+    color:gray;
+    text-decoration: underline;
+}
+h2{
+    color:blue;
+}
+/* para aplicar un cierto estilo a etiqueta con el selector # y el nombre asignado */
+#cabecera1{
+    color: red;
+}
+/* para selector class con el . */
+.parrafos_rojos{
+    color: red;
+    font-weight: 600;
+}
