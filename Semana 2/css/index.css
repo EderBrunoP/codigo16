@@ -3,7 +3,7 @@ h1{
     /* si una fuente no existe en css tenemos la opcion de poner varios tipos de letra
     para que si la primera no existe busque en la segunda y así sucesivamente
     sino encuentra ninguna utiliza la de new roman */
-    font-family: -apple-system;
+    font-family:Merriweather;
     font-size: 45px;
     /* font  weight para el peso de la fuente del 100 al 900*/
     /* !importante: en font weight no hay unidades de medida */
@@ -13,7 +13,7 @@ h1{
     text-decoration: underline;
 }
 .parrafo{
-    font-family: "Dank Mono",monospace;
+    font-family: Lora;
     /* font size nos permite designar el tamaño del texto */
     font-size: 32px;
 }
@@ -76,4 +76,17 @@ capitalize= primera letra en mayuscula */
     color: blue;
     /* text transform para cambiar el estilo de mayuscula o minuscula */
     text-transform: lowercase;
+}
+
+h2{
+    font-family: Righteous-Regular;
+}
+
+/* para que css pueda leer una fuente desde un archivo
+tenemos que @font-face esto nos permite cargar una fuente externa y darle un nombre
+para su uso*/
+
+@font-face {
+    font-family: "Righteous-Regular";
+    src: url("../fonts/Righteous-Regular.ttf");
 }

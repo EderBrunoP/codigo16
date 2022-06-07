@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "KdamThmorPro-Regular";
+    src: url("../fonts/KdamThmorPro-Regular.ttf");
+}
+
+h1{
+    font-family: KdamThmorPro-Regular;
+    text-transform: uppercase;
+    color: blue;
+    text-decoration: underline;
+    text-align: center;
+}
+ h2{
+     font-family: cursive;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     color: darkblue;
+     text-align: center;
+ }
+ 
+.titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: firebrick;
+}
+.grupo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    color: darkslategray;
+}
+.pais{
+    font-size: 15px;
+    font-style: oblique;
+}
