@@ -1,14 +1,32 @@
-/* selectores de etiqueta */
+/* selectores de etiqueta (tag) */
+html{
+    font-size: 10px;
+}
 body{
     margin-left: 20px;
     margin-right: 20px;
+    /* inmediato superior en medida del body 20px */
+    font-size: 20px; 
+    /* las medidas em y rem son medidas relativas a la medida asignada
+    em= padre inmediato superior
+    rem= padre raiz u absoluto (html)*/
+}
+h1{
+    /* font-size: 2em; 2 x 20px(body)=40px */
+    font-size: 3rem; /* 3x 10px(html:raiz)=30px*/
 }
 p{
     text-align: center;
-    font-size: 20px;
     font-weight: bold;
+    /* 1.5 x 20px= 30px */
+    font-size: 1.5em;
 }
 /* selectores de clases */
+/* */
+.small{
+    /* 0.6 x 30px= 18px */
+    font-size: 0.6em;
+}
 /* width =ancho */
 .solid{
     border-style: solid;
@@ -63,8 +81,30 @@ p{
     border-color: darkolivegreen;
 }
 .left_solid{
+    /* border lateral izquierdo */
     border-left:solid red 2px;
 }
 .right_dotted{
+    /* border lateral derecho */
     border-right: dotted palevioletred 3px;
+}
+.top-dashed{
+    /* border superior */
+    border-top: dashed 2px gray;
+}
+.border-bottom{
+    /* border inferior */
+    border-bottom: double 5px red;
+}
+.mix-left-top{
+    /* border parte lateral izquiersa y superior */
+    /* el estilo del borde va en sentido horario */
+    /* none= ninguno */
+    /* si se le asigna dos o tres valores 
+    el navegador lo toma como en sentido horario
+    color1 color2 color 3, el color1 borde superior
+    color2 bordes laterales y color3 para borde inferior */
+    border-style: solid double dashed dotted;
+    border-width: 4px ;
+    border-color: blue red rebeccapurple orange;
 }
