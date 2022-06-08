@@ -1,0 +1,70 @@
+/* selectores de etiqueta */
+body{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* selectores de clases */
+/* width =ancho */
+.solid{
+    border-style: solid;
+    border-color: antiquewhite;
+    border-width: 5px;
+
+}
+.dashed{
+    border-style: dashed;
+    border-color: rgb(181, 122, 45);
+    border-width: 8px;
+}
+.dotted{
+    /* border abrevia 3 propiedades en una*/
+    /* los 3 valores van en cualquier lugar*/
+    border: 3px dotted blue; 
+}
+.double{
+    border-style: double;
+    border-color: rgb(28, 119, 189);
+}
+.groove{
+    border-style: groove;
+    border-color: rgb(193, 25, 126);
+}
+.hidden{
+    border-style: hidden;
+    border-color: blue;
+}
+.inherit{
+    border-style: inherit;
+    border-color: blueviolet;
+}
+.initial{
+    border-style: initial;
+    border-color: brown;
+}
+.inset{
+    border-style:inset;
+    border-color: burlywood;
+}
+.outset{
+    border-style: outset;
+    border-color: chartreuse;
+}
+.ridge{
+    border-style: ridge;
+    border-color: coral;
+}
+.unset{
+    border-style: unset;
+    border-color: darkolivegreen;
+}
+.left_solid{
+    border-left:solid red 2px;
+}
+.right_dotted{
+    border-right: dotted palevioletred 3px;
+}
