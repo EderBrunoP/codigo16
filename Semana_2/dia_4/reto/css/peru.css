@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(220, 220, 180);
+}
+#contenedor{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to right,red 33%, white 33% ,white 66%, red 66%);
+    /* se coloca en el mismo % debido a que dos colores en el mismo punto evita el degradado */
+    margin: auto;
+    box-shadow: 20px 20px grey;
+}
+/* para utilizar pseudoclases se coloca dos puntos
+seguido de la pseudoclase */
+#contenedor:hover{
+    background: linear-gradient(to top,red 33%, white 33% ,white 66%, red 66%);
+}
+#circulo{
+    width: 200px;
+    height: 200px;
+    margin: 60px auto;
+    /* border-radius modifica los bordes de las esquina */
+    border-radius: 200px;
+    background: radial-gradient(red 33%, white 33% ,white 50%, red 50%);
+    filter: blur(10px) opacity(0.45);
+}
+#circulo:hover{
+    width: 300px;
+    height:300px;
+    background: none;
+    background-color: blue;
+}

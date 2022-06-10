@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(213, 210, 210);
+}
+#contenedor{
+    /* width= ancho */
+    width: 200px;
+    /* height= altura */
+    height: 200px;
+    /* background-color: tomato; */
+    /* linear-gradient nos permite asignar un degradado de diversos colores */
+    background: linear-gradient(red 50%, yellow 90%,blue 100%);
+    /*red inicia en 0px irá hasta 100px==100px
+    yellow inicia en 100px irá hasta 180px==80px
+    blue inicia en 180px irá hasta 200px == 20px 
+     */
+    /* margin= propiedad que le da un margen respecto a otros elementos
+    hasta los límites de su padre */
+    margin: auto;
+}
+.sombra{
+    /* box-shadow = brinda sombra a elementos */
+    /* box-shadow mínimo dos parámetros: eje x y eje y
+    1er parametro: eje x(default derecha)
+    2do parametro: eje y(default abajo) 
+    3er parametro: blur (difuminación) de la sombra
+    4to parametro: spread (propagación) la sombra
+    5to parametro: color*/
+    box-shadow: 20px 20px 0px 10px yellow;
+   
+}
+.sombra-texto{
+     /* text-shadow =sombra a textos */
+     /* 1 parametro: eje x(default derecha)
+     2 parametro: eje y(default abajo)
+     3 parametro: blur (difuminación)
+     4 parametro: color
+      */
+     text-shadow: 10px 10px 5px yellow;
+}
