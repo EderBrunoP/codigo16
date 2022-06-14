@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit",sans-serif;
+
+}
+.contenedor{
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    
+}
+.contenedor-interno{
+    background-color: hsl(216, 50%, 16%);
+    text-align: center;
+    /* padding: empuja hacia dentro
+    (interno) */
+    padding: 10px;
+    /* margin: empuja hacia afuera
+    margen externo */
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 350px;
+    color: hsl(215, 51%, 70%);
+    
+}
+h4{
+    color:  hsl(0, 0%, 100%);
+    text-align: left;
+    padding-left: 10px;
+}
+p{
+    color: hsl(215, 51%, 70%);
+    text-align: left;
+    padding-left: 10px;
+}
+.cubo{
+    width: 345px;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+.ethereum{
+    padding-left: 50px;
+    
+}
+.clock{
+    padding-left: 30px;
+}
+.avatar{
+    width: 10%;
+    height: 10%;
+    
+}
+#ethereum{
+    color: hsl(178, 100%, 50%);
+    text-align: left;
+}
+#timer{
+    text-align: right;
+}
+#nombre{
+    color: hsl(0, 0%, 100%);
+}

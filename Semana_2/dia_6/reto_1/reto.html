@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Righteous&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="./reto.css">
+    <title>Reto con tablas</title>
+</head>
+<body>
+    <section class="">
+        <h1>Github finder</h1>
+        <table id="root_table">
+            <!-- primera fila input más botón -->
+            <tr>
+                <td colspan="2" >
+                    <input id="input_search" type="text" placeholder="Buscar usuario">
+                </td>
+                <td class="button_td">
+                    <input id="button_search" type="button" value="Search">
+                </td>
+            </tr>
+            <!-- segunda fila 2 columns -->
+            <tr>
+                <td colspan="3">
+                    <table id="profile_table">
+                        <tr>
+                            <td>
+                                <img src="./image/Captura.PNG" alt="perfil">
+                            </td>
+                            <td id="content_main">
+                                Eder Bruno <br>@EderBrunoP
+                            </td>
+                            <td id="content_extra">
+                                0 Followers
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
