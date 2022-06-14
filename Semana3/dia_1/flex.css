@@ -1,0 +1,77 @@
+.container{
+    /* vh para que ocupe toda la pantalla */
+    height: 100vh;
+    /* cuando usamos flex, los demás div se pasan a inline */
+    display: flex;
+    border: solid 3px;
+    /* al activar flex estamos activando sus propiedades */
+    /* justify-content: allinea los elementos de forma horizontal
+    tienes 6 posibles valores 
+    flex-start: alinea los elementos al lado izquierdo
+    center: alinea al centro
+    flex-end: alinea los elementos a la derecha
+    
+    estos 3 separan los elementos de forma horizontal con la diferencia que el margen
+    que tiene cada uno es mayor
+
+    nota: el margen va a depender de cuanto espacio tenga libre
+    space-between: alinea los elementos de extremo a extremo sin margenes
+    space-around: alinea los elementos al extremo pero con un espacio en cada uno
+    space-evenly: 
+    ;*/
+    justify-content: center;
+    /* la propiedad que se encarga de alienar elementos de 
+    forma vertical en flex align-items */
+    /* nota: se basa en la altura del elemento
+    si un elemento no tiene altura no va a poder centrarlo
+     */
+    align-items: center;
+    
+    /* flex tbn permite controlar la dirección de 
+    los elementos:flex-direction: ;
+     */
+     /* row:
+     column: ha transformado la direccion de los elementos en columnas */
+     /* nota: por defecto la propiedad de los hijos es row */
+     flex-direction: column;
+}
+.container div{
+    border: solid red 3px;
+    height: 300px;
+    /* width: 300px;  */
+    width: 25%;
+}
+.container-2{
+    display: flex;
+    height: 100vh;
+    border: solid green 3px;
+    justify-content: space-around;
+    /* otra porpiedad es el flex-direction
+    donde es row-rervser y column-reverse */
+    flex-direction: row-reverse;
+}
+.container-2 div{
+    height: 300px;
+    width: 20%;
+    border: solid orange 3px;
+    
+}
+.container-3{
+    display: flex;
+    height: 100vh;
+    border: solid maroon 3px;
+    justify-content: space-around;
+    /* otra porpiedad es el flex-direction
+    donde es row-rervser y column-reverse */
+    flex-direction: column-reverse;
+}
+.container-3 div{
+    height: 300px;
+    width: 20%;
+    border: solid yellow 3px;
+    
+}
+/* cuando se invierten la columna
+align-items se pasa a controlar de manera vertical a horizontal
+y justify-content se pasa a controlar de manera horizontar a vertical
+ */
