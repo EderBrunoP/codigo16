@@ -1,0 +1,17 @@
+#box{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, red 35%,white 35%,white 70%,red 70%) ;
+    transition: all 6s;
+    border: 1px solid;
+    
+}
+#box:hover{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to right, red 35%,white 35%,white 70%,red 70%) ;    /* transition: nos permite definir el tiempo
+    para aplicar ciertas propiedades */
+    transition: all 2s;
+    transform: translate(50px, 50px);
+    border: 1px solid;
+}

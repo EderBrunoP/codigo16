@@ -1,0 +1,23 @@
+/* para crear variables empiezan con doble guión */
+/* :root desde la raíz de ámbito global */
+:root{
+    /* CASE SENSITIVE: sensible a mayusucla y minusculas */
+    /* variables de color: */
+    --primer-color: #e65e5e;
+    --segundo-color: #abe;
+
+    /* variables de tamaño */
+    --texto-pequeño: 1.2rem;
+    --texto-mediano: 1.4rem;
+    --texto-grande: 1.6rem;
+
+    /* variables de duracion */
+    --duration-short: 0.5;
+    --duration-regular: 1s;
+    --duration-large:2s;
+
+    /* variables de pointer */
+    --pointer-cursor: cursor;
+
+
+}
