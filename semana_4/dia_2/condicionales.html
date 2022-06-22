@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Condicionales</title>
+    <style type="text/css">
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Martes, 21 de junio</h1>
+    <h2>Condiciones + document.write</h2>
+    <hr>
+</body>
+<script type="text/javascript">
+    //codigo de javascript
+    document.write("<h3>Notas</h3>");
+     let nota=15; //nota de un alumno
+   nota=Number(prompt("Ingrese nota:"));
+    //if: si en condicional
+    // if (condicion){
+    //     //instrucciones si se cumple condición
+    // }else{
+    //     //instrucciones si no se cumple condicion
+    // }
+
+    if (nota>11){
+        document.write("<p class='blue'>"+nota+"</p>");
+        document.write("<p class='blue'>Desaprobado</p>");
+    }else{
+        document.write("<p class='red'>"+nota+"</p>");
+        document.write("<p class='red'>Desaprobado</p>");
+    }
+    
+</script>
+</html>
