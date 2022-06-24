@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles</title>
+    <style>
+        #container{
+            width: 300px;
+            min-height: 100px;
+            background-color: #ddd;
+            margin: 20px auto;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        p{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        
+    </div>
+</body>
+<script>
+// document.getElementByTagName()
+
+// document.getElementById() - usaco actualmente
+
+    const div_container= document.getElementById("container");
+    div_container.innerHTML="Bucles";
+
+    // += (numeros) suma al valor actual
+    // += (string /cadena) concatena sobre el valor actual
+    // += no reemplaza el actual valor
+
+    //break 
+    let frutas=["pera","manzana","limon","fresa","naranja"];
+   
+//!* bucle while
+
+//   let iter=0;
+//    while (iter<frutas.length){
+   
+//     div_container.innerHTML +="<p>"+frutas[iter]+"</p>";
+//     if (frutas[iter]=="limon"){
+//         break;
+//     }
+//     // iter=iter+1;
+//     // iter +=1;
+//     iter++;
+//    }
+   div_container.innerHTML+= "<hr>";
+
+   // bucle: conjunto de ciclos.
+   // break: romper el bucle completo.
+   // continue: rompe solo el ciclo actual, pero el bucle continua.
+
+// bucle for
+
+for (let iter=0;iter<frutas.length;iter++){
+    if (frutas[iter]=="limon"){
+        continue;
+    }
+    div_container.innerHTML +="<p>"+frutas[iter]+"</p>";
+}
+// for generico: 3 parametros
+// param1: declarar variable a iterar
+// param2: condicion del bucle
+// param3: como vamos a iterar la variable
+//separador de parametros: ;
+
+div_container.innerHTML+="<hr> <h1>Tabla de multiplicar</h1>";
+
+const numero=15
+// utilizando for:
+// imprimir la tabla del 1 al 20 del numero 15
+// 1x15=15
+// 2x15=30
+for (let i=0;i<=20;i++){
+    div_container.innerHTML +="<p>"+i+" x "+numero+" "+" = "+i*numero+"</p>";
+
+}
+
+// for anidados
+div_container.innerHTML+="<hr>";
+// imprimir tablas del 1 al 10,
+const numero_tablas=8;
+// se puede omitir las llaves si la sentencia solo tiene una instruccion
+
+for (let i=1;i<=numero_tablas;i++){
+    if (i==3 || i==6 || i==9) continue; // CLEAN CODE 
+    div_container.innerHTML +="<h2>Tabla del "+i+":</h2>";
+    // queremos 10 multiplicadores de "i"
+    for (let j=1;j<=10;j++){
+        if (j==2 || j==4 || j==6 || j==8 || j==10){
+            continue;
+        }
+        let texto=1+" x "+j+" = "+(i*j);
+        div_container.innerHTML +="<p>"+texto+"</p>";
+    }
+}
+
+// for vs while: cantidad de iteraciones
+// while: cantidad de iteraciones indeterminadas (controlamos por condición)
+// for: cantidad de iteraciones determinada
+
+// For of: estructura de control para poder recorrer objetos iterables
+/* (array, string, map, set, custom_objects)
+*/
+div_container.innerHTML +="<hr>";
+
+let productos =[
+    "mouse",
+    "teclado",
+    "parlante",
+    "monitor",
+    "celular",
+    "adaptador",
+    "cargador",
+];
+
+/* for (var iter of objetoIterable){...}
+*/
+
+for (const x of productos){
+    div_container.innerHTML +="<p>-"+x+"</p>";
+}
+
+div_container.innerHTML +="<hr>";
+
+const frase="amo programar"; //string
+for (let letra of frase){
+    if (letra==" ") continue;
+    div_container.innerHTML +="<p> -"+letra+"</p>";
+}
+
+
+div_container.innerHTML +="<hr>";
+
+/* for (var index/key/property in objetoIterable){...}
+
+ For in: estructura de control para poder recorrer objetos iterables
+ (array, string, map, set, custom_objects)
+*/
+
+// captura los índices del array
+for (const y in productos){
+    div_container.innerHTML +="<p>-"+y+"</p>";
+}
+
+div_container.innerHTML +="<hr>";
+
+
+</script>
+</html>

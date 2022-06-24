@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto</title>
+    <style type="text/css">
+        .frio{
+            color: blue;
+        }
+        .templado{
+            color: rgb(112, 186, 247);
+        }
+        .calido{
+            color: brown;
+        }
+        .tropical{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    let temperatura;
+    temperatura=Number(prompt("Ingrese temperatura"));
+
+    
+    if (isNaN(temperatura)){
+        alert("Ingrese una temperatura válida");
+        temperatura=Number(prompt("Ingrese temperatura"));
+    }else if (temperatura<=10){
+        document.write("<p class='frio'>"+temperatura+"</p>");
+        document.write("<p class='frio'>Clima Frío</p>")
+    }else if (temperatura>=11 && temperatura<=16){
+        document.write("<p class='templado'>"+temperatura+"</p>");
+        document.write("<p class='templado'>Clima Templado</p>")
+    }else if (temperatura>=17 && temperatura<=24){
+        document.write("<p class='calido'>"+temperatura+"</p>");
+        document.write("<p class='calido'>Clima Cálido</p>")
+    }else if(temperatura>24){
+        document.write("<p class='tropical'>"+temperatura+"</p>");
+        document.write("<p class='tropical'>Clima Tropical</p>")
+    }
+</script>
+</html>

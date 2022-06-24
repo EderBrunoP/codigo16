@@ -23,21 +23,86 @@
     //codigo de javascript
     document.write("<h3>Notas</h3>");
      let nota=15; //nota de un alumno
-   nota=Number(prompt("Ingrese nota:"));
-    //if: si en condicional
-    // if (condicion){
-    //     //instrucciones si se cumple condición
-    // }else{
-    //     //instrucciones si no se cumple condicion
-    // }
+//    nota=Number(prompt("Ingrese nota:"));
+   //isNaN: evalúa si un valor no es númerico
+    if (isNaN(nota)){
+        alert("Solo numeros por favor");
+        nota=Number(prompt("Ingrese nota:"));
+    }
 
     if (nota>11){
         document.write("<p class='blue'>"+nota+"</p>");
-        document.write("<p class='blue'>Desaprobado</p>");
+        document.write("<p class='blue'>Aprobado</p>");
     }else{
         document.write("<p class='red'>"+nota+"</p>");
         document.write("<p class='red'>Desaprobado</p>");
+    }    
+    document.write("<hr>");
+    //triangulos
+    document.write("<h3>Triángulos</h3>");
+    let angulo=400;
+    document.write("<p>"+angulo+"</p>");
+
+    if (angulo==0){
+        document.write("<p>Nulo</p>");
+    }else if (angulo<90){
+        document.write("<p>Agudo</p>");
+    }else if (angulo==90){
+        document.write("<p>Recto</p>");
+    }else if (angulo<180){
+        document.write("<p>Obtuso</p>");
+    }else if (angulo==180){
+        document.write("<p>Llano</p>");
+    }else if (angulo<360){
+        document.write("<p>Cóncavo</p>");
+    }else if (angulo==360){
+        document.write("<p>Completo</p>");
+    }else {
+        document.write("<p>Inexistente</p>");
     }
+
+//tipos de datos
+// String (cadena=texto)
+//Numeric (numeros)
+//Boolean (true/false)
+// && (and)
+// || (or)
+// ! (not)
+   let hora=20;
+   if (hora<18 && hora>6){
+    document.write("<p>Es de día</p>");
+   }else{
+    document.write("<p>Es de noche</p>");
+   }
+
+   // = asignar valor a una variable
+   // == compara dos valores. (se usa en una condición)
+   // === compara dos valores adicionalmente por el tipo de datos.
+
+   // ejemplo de operador ternario
+   document.write("<hr>")
+   let hora1=10;
+   let cielo;
+   // dos formas de utilizar los operadores ternarios
+//    cielo=(hora1<18 && hora1>6) ? "dia":"noche"
+    (hora1<18 && hora1>6) ? cielo="dia":cielo="noche";
+    
+    
+    document.write("<p>Son las "+hora1+" horas y es de "+cielo+"</p>");
+   document.write("<hr>")
+
+   //para asignarles estilos directamente desde javascript a html
+
+   document.body.style.backgroundColor='red';
+   
+   //getElementsByTagName: permite seleccionar un elemento y asignarle estilo
+//    document.getElementsByTagName("h1")[0].innerText='Eder Bruno';
+
+
+    // pasar datos de javascript a html
+
+    let h1_texto=document.getElementsByTagName("h1")[0].innerText;
+    alert(h1_texto);
     
 </script>
 </html>
